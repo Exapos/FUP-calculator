@@ -9,14 +9,16 @@ function Form({label, id,idText, option}) {
     const [time, setTime] = useState('')
     
     const handleSubmit = (e) => {
-    e.preventDefault();
     const input = {size, download, agrega, time}
     console.log(input)
+    
+        
     }
+    
 
   return (
     <div className='create'>
-        <form onSubmit={handleSubmit}>
+        <form onKeyUp={handleSubmit}>
             <label>
                 <input type="text" placeholder="Velikost dat" id="__p__velikost_dat" value={size} onChange={(e) => setSize(e.target.value)}/>
             </label>
@@ -57,10 +59,7 @@ function Form({label, id,idText, option}) {
             
             <label>
                 <input type="text" placeholder="Doba stahovani" id="__p__time"  value={time} onChange={(e) => setTime(e.target.value)}/>
-            </label>
-            
-            <button id="output">Kalkulovat</button>
-            
+            </label>            
         </form>
     </div>
   )

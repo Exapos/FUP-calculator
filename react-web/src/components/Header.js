@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Header = (props) => {
+const Header = ({id}) => {
   return (
     <header>
-        <h1>{props.title}</h1>
+        <h1 id={id}>Fup kalkulačka na toniho přijemné příklady</h1>
     </header>
   )
 }
@@ -12,8 +13,9 @@ Header.defaultProps = {
     title: "header"
 }
 
-// const headingStyle = {
-//     color: 'purple',
-//     backgroundColor: 'black'
-// }
+Header.propTypes = {
+  id: PropTypes.string,
+}
+
+
 export default Header

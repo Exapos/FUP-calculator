@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Create({label}) {
+function Create({label, id,idText, option}) {
   return (
-    <div className='create'>
+    <div className='create' id={id}>
         <form>
             <label>
-                <input type="text" placeholder={label}/>
+                <input type="text" placeholder={label} id={idText}/>
             </label>
-            <select>
+            <select id={option}>
                 <option value="Bytes">Bytes[B/s]</option>
                 <option value="Kilobytes">Kilobytes[KB/s]</option>
                 <option value="Megabytes">Megabytes[MG/s]</option>
@@ -28,10 +28,16 @@ function Create({label}) {
 
 Create.defaultProps = {
     title: "Text label",
+    id: "Id label",
+    idText: "Text Id Label",
+    option: "Id option label",
 }
 
 Create.propTypes = {
     title: PropTypes.string,
+    id: PropTypes.string,
+    idText: PropTypes.string,
+    option: PropTypes.string,
 }
 
 export default Create

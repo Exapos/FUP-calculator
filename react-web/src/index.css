@@ -1,13 +1,188 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    top: 0px;
+    left: 0px;
+    /* width: 1440px;
+    height: 1024px; */
+    width: 390px;
+    height: 844px;
+    background:rgba(208,213,183,1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Mobile  */
+#_bg__iphone_13___13_pro___1 {
+	top: 0px;
+	left: 0px;
+	width: 390px;
+	height: 844px;
+	background:rgba(208,213,183,1);
+}
+
+/* OUTPUT */
+#output {
+	top: 621px;
+	left: 195px;
+	width: 197px;
+	height: 74px;
+	background:rgba(255,255,255,0);
+}
+
+#output_rectangle {
+	top: 621px;
+	left: 195px;
+	width: 194.65px;
+	height: 74px;
+}
+
+#__p__output_text {
+	top: 631px;
+	left: 191.35px;
+	width: 218px;
+	height: 79px;
+	overflow: hidden;
+	font-family: Outfit;
+	font-size: 36px;
+	text-align: center;
+	color:#000000;
+}
+
+/* DROPDOWN MENU */
+#dropdown_box_up {
+	width: 150px;
+	height: 80px;
+	-ms-border-radius: 15.29px;
+	-o-border-radius: 15.29px;
+	-moz-border-radius: 15.29px;
+	-webkit-border-radius: 15.29px;
+	border-radius: 15.29px;
+	border: 2.48px solid #b8bbc2;
+	background:rgba(30,30,30,1);
+	color: white;
+	text-align: center;
+}
+
+#dropdown_box_down {
+	width: 150px;
+	height: 80px;
+	-ms-border-radius: 15.29px;
+	-o-border-radius: 15.29px;
+	-moz-border-radius: 15.29px;
+	-webkit-border-radius: 15.29px;
+	border-radius: 15.29px;
+	border: 2.48px solid #b8bbc2;
+	background:rgba(30,30,30,1);
+	color: white;
+	text-align: center;
+}
+
+
+
+/* Inpuut */
+
+#__p__velikost_dat {
+	margin-top: 32px;
+	width: 212.9px;
+	height: 114.26px;
+	overflow: hidden;
+	font-family: Outfit;
+  -ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+  border-radius: 100px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+	border-color: #000000;
+	background:rgba(125,119,101,1);
+	border-top-width: 0px;
+	border-top-style: solid;
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-right-style: solid;
+  border-right-width: 0px;
+}
+
+
+#__p__rychlost_stahovani_ {
+	margin-top: 131.25px;
+	width: 212.9px;
+	height: 114.26px;
+	overflow: hidden;
+	font-family: Outfit;
+  -ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+  border-radius: 100px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+	border-color: #000000;
+	background:rgba(125,119,101,1);
+  border-top-width: 0px;
+	border-top-style: solid;
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-right-style: solid;
+  border-right-width: 0px;
+}
+
+#agregace_renctangle {
+	top: 485.99px;
+	left: px;
+	width: 212.9px;
+	height: 114.26px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background:rgba(125,119,101,1);
+}
+
+#__p__agregace {
+	top: 497px;
+	left: 16px;
+	width: 192px;
+	height: 97px;
+	overflow: hidden;
+	font-family: Outfit;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#jak_dlouho_rectangle {
+	display:none;
+	top: 714px;
+	left: 2px;
+	width: 212.9px;
+	height: 114.26px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background:rgba(125,119,101,1);
+}
+
+#__p__jak_dlouho_stahoval {
+	top: 731.26px;
+	left: 16px;
+	width: 192px;
+	height: 97px;
+	overflow: hidden;
+	font-family: Outfit;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
 }

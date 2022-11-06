@@ -35,6 +35,11 @@ function Form() {
         setTime(time)
     }
     
+    //S tímhle potřebuji pomoct
+    if (download && time && size) {
+        alert("Nemůžeš mít zadaný víc jak 2 položky!\nAplikace ti resetuje údaje!")
+        Reset()
+    }
 
 }
 

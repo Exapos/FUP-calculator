@@ -2,23 +2,47 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useState } from 'react';
 
-function Form({label, id,idText, option}) {
-    const [size, setSize] = useState('')
-    const [download, setDownload] = useState('')
-    const [agrega, setAgrega] = useState('')
-    const [time, setTime] = useState('')
+function Form() {
+    let [size, setSize] = useState('')
+    let [download, setDownload] = useState('')
+    let [agrega, setAgrega] = useState('')
+    let [time, setTime] = useState('')
+    
+    const Reset = (e) => {
+        setSize('')
+        setDownload('')
+        setTime('')
+        setAgrega('') 
+    }
     
     const handleSubmit = (e) => {
+    e.preventDefault()
     const input = {size, download, agrega, time}
     console.log(input)
     
-        
+    // download time = file size / internet download speed
+    
+    if (download && time) {
+        size = download * time
+        setSize(size)
+    }
+    if (size && time) {
+        download = size / time
+        setDownload(download)
+    }    
+    if (download && size) {
+        time = size / download 
+        setTime(time)
     }
     
 
+}
+
+
+
   return (
     <div className='create'>
-        <form onKeyUp={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <label>
                 <input type="text" placeholder="Velikost dat" id="__p__velikost_dat" value={size} onChange={(e) => setSize(e.target.value)}/>
             </label>
@@ -56,10 +80,15 @@ function Form({label, id,idText, option}) {
             <label>
                 <input type="text" placeholder="Agregace" id="__p__agregace"  value={agrega} onChange={(e) => setAgrega(e.target.value)}/>
             </label>
-            
             <label>
                 <input type="text" placeholder="Doba stahovani" id="__p__time"  value={time} onChange={(e) => setTime(e.target.value)}/>
-            </label>            
+            </label>       
+            <div className='buttons'>
+                <button id="reset" onClick={Reset} className="buttons">Reset</button>
+                <button id="output" className="buttons">Kalkulovat</button>
+            </div>
+
+            
         </form>
     </div>
   )

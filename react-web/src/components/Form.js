@@ -22,10 +22,6 @@ function Form() {
     
     // download time = file size / internet download speed
     
-    if (download && time) {
-        size = download * time
-        setSize(size)
-    }
     if (size && time) {
         download = size / time
         setDownload(download)
@@ -36,14 +32,16 @@ function Form() {
     }
     
     //S tímhle potřebuji pomoct
-    if (download && time && size) {
-        alert("Nemůžeš mít zadaný víc jak 2 položky!\nAplikace ti resetuje údaje!")
-        Reset()
+    if (download && time) {
+        if(!size === '') {
+            alert("Nemůžeš mít zadaný víc jak 2 položky!\nAplikace ti resetuje údaje!")
+            Reset()
+        }
+        size = download * time
+        setSize(size)
     }
 
 }
-
-
 
   return (
     <div className='create'>

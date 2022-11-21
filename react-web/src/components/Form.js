@@ -41,6 +41,16 @@ function Form() {
         setSize(size)
     }
 
+    // if (download && time) {
+    //  if(!size === '') {
+    //     alert("Nemůžeš mít zadaný víc jak 2 položky!\nAplikace ti resetuje údaje!")
+    //     Reset()
+    //} else {
+    //     size = download * time
+    //     setSize(size)
+    // }
+    //}
+
 }
 
   return (
